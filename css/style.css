@@ -1,0 +1,939 @@
+* {
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url("../fonts/OpenSans/open-sans-v15-latin-regular.woff"), url("../fonts/OpenSans/open-sans-v15-latin-italic.woff");
+}
+
+@font-face {
+    font-family: 'Impact';
+    src: url("../fonts/Impact/Impact.woff");
+}
+
+
+/* ########### Menu start ########### * ##################################* ########### Menu start ########### */
+
+
+/* ########### Menu start ########### * ##################################* ########### Menu start ########### */
+
+.header_menu {
+    width: 100%;
+    min-height: 10px;
+    background-color: #202020;
+    padding: 38px 0;
+    position: fixed;
+    z-index: 100;
+}
+
+.header_menu_nav {
+    width: 100%;
+    min-height: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_menu_logo {
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'Impact';
+    transition: 0.5s ease;
+}
+
+.header_menu_logo:hover {
+    color: #e25050;
+}
+
+.header_menu_ul {
+    position: relative;
+}
+
+.header_menu_ul ul {
+    display: flex;
+}
+
+.header_menu_ul ul a {
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Impact';
+    padding: 10px 14px;
+    margin: 0 10px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    transition: 0.5s ease-in;
+}
+
+.header_menu_ul ul a.active {
+    background: #e25050;
+}
+
+.header_menu_ul ul a:hover {
+    background: #e25050;
+}
+
+.header_menu_phone {
+    width: 171px;
+    height: 37px;
+    background: #e25050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 65px;
+    right: 0;
+}
+
+.header_menu_phone a {
+    width: 47px;
+    height: 37px;
+    background: #bd4141;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #ffffff;
+    font-family: 'Impact';
+    letter-spacing: 1px;
+}
+
+.header_menu_phone span {
+    width: 100%;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.header_menu_button {
+    background: transparent;
+    color: #ffffff;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    display: none;
+}
+
+.header_menu_ul.active {
+    transform: translateX(0%);
+}
+
+
+/* ########### Menu end ########### * ##################################* ########### Menu end  */
+
+
+/* ########### Menu end ########### * ##################################* ########### Menu end  */
+
+
+/* ########### Slider Start ########### * ##################################* ########### Slider Start  */
+
+
+/* ########### Slider Start ########### * ##################################* ########### Slider Start */
+
+.header_slider {
+    width: 100%;
+    height: 892px;
+    position: relative;
+    top: 100px;
+}
+
+.header_slider_btn {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(left, #383838, #46464603);
+    background: linear-gradient(to right, #383838, #46464603);
+    z-index: 1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-size: 50px;
+}
+
+.header_slider_btn:hover {
+    background: rgba(121, 121, 121, 0842);
+}
+
+.header_slider .left {
+    left: 0;
+}
+
+.header_slider .right {
+    right: 0;
+    background: linear-gradient(to left, #383838, #46464603);
+}
+
+.header_slider .right:hover {
+    background: rgba(121, 121, 121, 0842);
+}
+
+.header_slider_item {
+    width: 100%;
+    min-height: 10px;
+}
+
+.header_slider_item_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.header_slider_item_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header_slider_item_box.active {
+    opacity: 1;
+}
+
+.slider_item_text {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.slider_item_text span {
+    font-family: 'OpenSans';
+    font-size: 13px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #da4e4ce0;
+    padding: 15px 22px;
+}
+
+.slider_item_text h1 {
+    font-family: 'OpenSans';
+    font-size: 30px;
+    color: #fefefe;
+    text-transform: uppercase;
+    background-color: #292320ea;
+    padding: 15px 22px;
+    margin: 5px 0;
+}
+
+.slider_item_text p {
+    text-transform: uppercase;
+    font-family: 'OpenSans';
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #292320ea;
+    padding: 15px 22px;
+}
+
+
+/* ########### Slider end ########### * ##################################* ########### Slider end ########### */
+
+
+/* ########### Slider end ########### * ##################################* ########### Slider end ########### */
+
+
+/* ####### Welcome Start ########### * ################################* ########### Welcome Start ########### */
+
+
+/* ####### Welcome Start ########### * ################################* ########### Welcome Start ########### */
+
+.welcome {
+    width: 100%;
+    min-height: 10px;
+    padding: 164px 0 70px;
+}
+
+.welcome_title {
+    color: #202020;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Impact';
+    text-align: center;
+}
+
+.welcome_title span {
+    color: #e25050;
+}
+
+.welcome_text {
+    font-size: 16px;
+    color: #a2a2a2;
+    text-align: center;
+    font-family: 'OpenSans';
+    padding: 20px 0;
+}
+
+.welcome_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 60px;
+}
+
+.welcome_item_title img {
+    margin-right: 14px;
+}
+
+.welcome_item_title {
+    font-size: 14px;
+    color: #202020;
+    font-family: 'Impact';
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.welcome_item_text {
+    font-size: 13px;
+    color: #777777;
+    text-align: left;
+    line-height: 20px;
+    margin-top: 16px;
+}
+
+
+/*###### Welcome End ########### * ################################* ########### Welcome End ##### */
+
+
+/* ####### Welcome End ########### * ################################* ########### Welcome End   */
+
+
+/* ####### Trainers Start ########### * ################################* ########### Trainers Start*/
+
+
+/* ####### Trainers Start ########### * ################################* ########### Trainers Start  */
+
+.trainers {
+    background: url(../images/bg_02.jpg);
+    background-attachment: fixed;
+    padding-bottom: 70px;
+}
+
+.trainers_superb_title {
+    font-family: 'OpenSans';
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 66px;
+    padding-bottom: 9px;
+}
+
+.trainers_superb hr {
+    width: 45px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    background: #ffffff;
+    border: none;
+}
+
+.trainers_card {
+    width: 100%;
+    height: 315px;
+    margin-top: 60px;
+    position: relative;
+    cursor: pointer;
+}
+
+.trainers_card.active .trainers_front {
+    transform: rotateY(180deg);
+}
+
+.trainers_card.active .trainers_back {
+    transform: rotateY(360deg);
+}
+
+.trainers_front {
+    width: 100%;
+    height: 315px;
+    background: #ffffff;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 0.5s ease;
+}
+
+.trainers_front img {
+    width: 100%;
+    height: auto;
+}
+
+.trainers_card_text {
+    padding: 25px 0 0 20px;
+}
+
+.trainers_card_text h5 {
+    font-size: 14px;
+    color: #202020;
+    text-transform: uppercase;
+}
+
+.trainers_card_text p {
+    color: #afafaf;
+}
+
+.trainers_back {
+    width: 100%;
+    height: 315px;
+    background: #ffffff;
+    position: absolute;
+    padding: 33px 20px 0 22px;
+    transform: rotateY(180deg);
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.trainers_back h5 {
+    font-size: 14px;
+    color: #202020;
+    text-transform: uppercase;
+}
+
+.trainers_back p {
+    color: #afafaf;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.trainers_back span {
+    font-size: 13px;
+    color: #777777;
+    line-height: 22px;
+}
+
+.trainers_back_brend {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    padding: 0;
+}
+
+.trainers_back_brend a {
+    margin: 0 5px;
+    color: #afafaf;
+    font-size: 16px;
+    transition: 0.5s ease;
+}
+
+.trainers_back_brend a:hover {
+    color: #e25050;
+}
+
+
+/* ####### Trainers End ########### * ################################* ########### Trainers End */
+
+
+/* ####### Trainers End ########### ################################* ########### Trainers End  */
+
+
+/* ####### Gallery Start #######################  Gallery Start ################# */
+
+
+/* ####### Gallery Start #######################  Gallery Start ################# */
+
+.gallery {
+    width: 100%;
+    min-height: 10px;
+    padding: 60px 0;
+}
+
+.gallery_title {
+    font-family: 'OpenSans';
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #202020;
+    text-align: center;
+    padding-bottom: 11px;
+}
+
+.gallery hr {
+    width: 45px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    background: #141414;
+    border: none;
+}
+
+.gallery_text {
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    color: #c7c7c7;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.gallery_img {
+    width: 100%;
+    min-height: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.gallery_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.gallery_img a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    color: #e25050;
+    width: 100%;
+    height: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00000083;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.gallery_img:hover a {
+    height: 100%;
+    opacity: 1;
+}
+
+.gallery_img:hover img {
+    transform: scale(1.5);
+    filter: saturate(300%);
+}
+
+
+/* ####### Pricing Start #######################  Pricing Start ################# */
+
+
+/* ####### Pricing Start #######################  Pricing Start ################# */
+
+.pricing {
+    background: #e25050;
+    padding: 65px 0;
+}
+
+.pricing_title {
+    font-family: 'OpenSans';
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 11px;
+}
+
+.pricing_hr {
+    width: 45px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    background: #ffffff;
+    border: none;
+}
+
+.pricing_cart {
+    display: flex;
+    justify-content: space-between;
+    background: #d14343;
+    margin-top: 60px;
+    padding: 25px 17px 25px 17px;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    border: 1px solid #e25050;
+}
+
+.pricing_cart:hover {
+    border: 1px solid #ffffff;
+    background: #d1434300;
+    transform: scale(1.1);
+}
+
+.pricing_car:hover hr {
+    color: #ffffff;
+}
+
+.pricing_cart_price h3 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.pricing_cart_price img {
+    margin: 0 auto;
+    display: block;
+}
+
+.pricing_cart_price p {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 900;
+    position: relative;
+}
+
+.pricing_cart_price p span {
+    font-size: 14px;
+    position: absolute;
+    bottom: 23px;
+}
+
+.pricing_cart_hr {
+    color: #e25050;
+    transition: 0.5s;
+}
+
+.pricing_cart_text {
+    margin-top: 15px;
+}
+
+.pricing_cart_text ul {
+    padding: 0;
+}
+
+.pricing_cart_text p {
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.pricing_cart_text i {
+    margin-right: 8px;
+}
+
+
+/* ####### Pricing End #######################  Pricing End ################# */
+
+
+/* ####### Pricing End #######################  Pricing End ################# */
+
+
+/* ####### Partners Start #######################  Partners Start ################# */
+
+
+/* ####### Partners Start #######################  Partners Start ################# */
+
+.partners {
+    padding: 65px 0;
+}
+
+.partners_title {
+    font-family: 'OpenSans';
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 11px;
+}
+
+.parntners_hr {
+    width: 45px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000000;
+    background: #000000;
+    border: none;
+}
+
+.partners_slider {
+    margin-top: 50px;
+}
+
+footer {
+    background: url(../images/bg_04.jpg);
+    padding: 56px 0 40px;
+}
+
+.footer_contact {
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+footer p {
+    color: #7f7f7f;
+    line-height: 25px;
+}
+
+.p1 {
+    padding: 30px 0;
+}
+
+footer input {
+    width: 100%;
+    height: 35px;
+    background: #00000000;
+    border: 2px solid #4f4f4f;
+    color: #ffffff;
+}
+
+.second_input {
+    margin-left: 15px;
+}
+
+::placeholder {
+    text-transform: uppercase;
+    padding: 10px 0px 10 10px;
+    font-size: 12px;
+}
+
+footer textarea {
+    width: 100%;
+    background: #00000000;
+    border: 2px solid #4f4f4f;
+    color: #ffffff;
+    height: 100px;
+    margin-top: 16px;
+}
+
+.input {
+    display: flex;
+}
+
+form {
+    display: flex;
+    margin-top: 30px;
+}
+
+.form_2 {
+    margin-left: 20px;
+}
+
+.footer_button {
+    margin-top: 16px;
+    background: #e25050;
+    color: #ffffff;
+    border: none;
+    padding: 14px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.5s ease;
+}
+
+.footer_button:hover {
+    background: #ec6262;
+}
+
+.footer_button i {
+    padding-left: 15px;
+}
+
+.footer_send {
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.footer_make {
+    color: #707070;
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 88px;
+}
+
+.copyright .top {
+    text-decoration: underline;
+    color: #e25050;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    background: #00000000;
+    cursor: pointer;
+}
+
+
+/* ####### Media Start ###################################  Media Start #########*/
+
+
+/* ####### Media Start ###################################  Media Start #########*/
+
+@media screen and (max-width:992px) {
+    .header_menu_ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10000;
+        transition: 0.5s ease;
+        background: #202020;
+        transform: translateX(-100%);
+    }
+    .header_menu_ul ul {
+        flex-direction: column;
+    }
+    .header_menu_ul ul a {
+        display: block;
+        text-align: center;
+    }
+    .header_menu_ul ul li {
+        margin-top: 20px;
+    }
+    .header_menu_button {
+        display: block;
+    }
+    .trainers_front {
+        height: 370px;
+    }
+    .trainers_front .text .otto_h5 {
+        font-size: 12px;
+    }
+    .trainers_back {
+        height: 370px;
+        padding: 7px 5px 0 5px;
+    }
+    .trainers_back .otto_h5 {
+        font-size: 12px;
+    }
+    .trainers_back span {
+        font-size: 10px;
+        line-height: 17px;
+    }
+    .trainers_back_brend {
+        margin-top: 150px;
+    }
+    .footer_send {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 844px) {
+    .header_menu_phone {
+        top: 74px;
+        left: 34%;
+    }
+}
+
+@media (max-width: 767px) {
+    .trainers_front {
+        height: 360px;
+    }
+    .trainers_back {
+        height: 360px;
+        padding: 33px 20px 0 22px;
+    }
+    .trainers_front .text .otto_h5 {
+        font-size: 14px;
+    }
+    .trainers_back .otto_h5 {
+        font-size: 14px;
+    }
+    .trainers_back span {
+        font-size: 13px;
+        line-height: 21px;
+    }
+    .trainers_back .brend {
+        margin-top: 20%;
+    }
+    .trainers_back .brend a {
+        margin: 0 5px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .form_2 {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .trainers_front {
+        height: 350px;
+    }
+    .trainers_front img {
+        width: 100%;
+        height: 70%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+    .trainers_back {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .trainers_card {
+        width: 100%;
+        height: 310px;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .slider_item_text {
+        left: 10%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .header_menu_ul {
+        width: 65%;
+    }
+    .trainers_back_brend {
+        margin-top: 60px;
+    }
+    .copyright {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:386px) {
+    .header_menu_phone {
+        left: 25%;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .trainers_back {
+        padding: 9px 10px 0 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .trainers_back .brend a {
+        margin: 0 2px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .header_menu_phone {
+        width: 130px;
+    }
+}
